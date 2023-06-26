@@ -12,4 +12,6 @@ for (let i = 0; i < numberOfPixels; i++) {
   pixel.classList.add('pixel');
   pixel.style.width =  `${pixelWidth}px`;
   pixel.style.height =  `${pixelHeight}px`;
+
+  pixel.addEventListener('mouseover', () => pixel.style.backgroundColor = 'black');
 }
