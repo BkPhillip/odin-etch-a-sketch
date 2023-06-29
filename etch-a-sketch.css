@@ -1,6 +1,21 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+  
 #container {
   width: 400px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
+}
+
+#outerContainer {
+  border: 2px solid black;
+  display: inline-block;
 }
