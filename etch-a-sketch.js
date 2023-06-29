@@ -12,7 +12,8 @@ function resetSketch() {
   const newRows = prompt("How many columns/rows would you like for your new sketch? (1 - 100)");  //Propt user for new dimensions of grid
   const newNumberPixels = newRows * newRows;
 
-  if (!Number.isFinite(parseInt(newRows)) || newRows < 1 || newRows > 100) {  //Check if user input is finite and between 1 and 100
+  if (newRows == null) return; 
+  else if (!Number.isFinite(parseInt(newRows)) || newRows < 1 || newRows > 100) {  //Check if user input is finite and between 1 and 100
     alert("Alert! User input not between 1 and 100, please enter a new number of columns/rows.");
     resetSketch();
     return;
